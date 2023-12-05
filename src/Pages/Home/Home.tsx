@@ -5,6 +5,7 @@ import { Button } from "../../components/Button/Button";
 import { GetPokemonRequest } from "../../redux/actions/GetPokemonActions";
 import { RootState } from "../../redux/globalStore";
 import { PokemonCard } from "../../components/PokemonCard/PokemonCard";
+import { TypeSelector } from "../../components/TypeSelector/TypeSelector";
 
 export const Home = () => {
   const dispatch = useDispatch();
@@ -31,6 +32,7 @@ export const Home = () => {
       {data !== null ? (
         <PokemonCard name={data.name} sprite={data.sprite} types={data.types} />
       ) : null}
+      <TypeSelector></TypeSelector>
     </>
   );
 };

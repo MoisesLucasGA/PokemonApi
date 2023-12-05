@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Pokemontypes, theme } from "../../assets/theme/theme";
+import { theme } from "../../assets/theme/theme";
 
 export const Card = styled.div`
   display: flex;
